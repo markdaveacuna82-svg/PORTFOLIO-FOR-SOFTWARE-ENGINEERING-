@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e1017"/>
+      <stop offset="60%" stop-color="#141724"/>
+      <stop offset="100%" stop-color="#08080c"/>
+    </linearGradient>
+
+    <linearGradient id="laserGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="transparent"/>
+      <stop offset="25%" stop-color="#ff2a40"/>
+      <stop offset="50%" stop-color="#ffbe0b"/>
+      <stop offset="75%" stop-color="#ff2a40"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </linearGradient>
+
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="360" fill="url(#bgGrad)"/>
+  
+  <!-- Cyber / Japanese Grid Overlay -->
+  <g stroke="rgba(230, 57, 70, 0.12)" stroke-width="1">
+    <line x1="0" y1="60" x2="600" y2="60"/>
+    <line x1="0" y1="120" x2="600" y2="120"/>
+    <line x1="0" y1="180" x2="600" y2="180"/>
+    <line x1="0" y1="240" x2="600" y2="240"/>
+    <line x1="0" y1="300" x2="600" y2="300"/>
+    <line x1="100" y1="0" x2="100" y2="360"/>
+    <line x1="200" y1="0" x2="200" y2="360"/>
+    <line x1="300" y1="0" x2="300" y2="360"/>
+    <line x1="400" y1="0" x2="400" y2="360"/>
+    <line x1="500" y1="0" x2="500" y2="360"/>
+  </g>
+
+  <!-- Central Camera Scanner Frame -->
+  <rect x="180" y="50" width="240" height="240" rx="14" fill="#0b0d14" stroke="#ff2a40" stroke-width="2" opacity="0.9"/>
+  <rect x="174" y="44" width="252" height="252" rx="18" fill="none" stroke="#e5b869" stroke-width="1" stroke-dasharray="16 12" opacity="0.6"/>
+
+  <!-- Corner Brackets (Targeting Reticle) -->
+  <path d="M195 75 L195 65 L215 65" fill="none" stroke="#ff2a40" stroke-width="4" stroke-linecap="round"/>
+  <path d="M385 65 L405 65 L405 85" fill="none" stroke="#ff2a40" stroke-width="4" stroke-linecap="round"/>
+  <path d="M195 265 L195 275 L215 275" fill="none" stroke="#ff2a40" stroke-width="4" stroke-linecap="round"/>
+  <path d="M385 275 L405 275 L405 255" fill="none" stroke="#ff2a40" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Stylized QR Code Graphic -->
+  <!-- Top Left Finder Pattern -->
+  <rect x="210" y="80" width="46" height="46" rx="4" fill="none" stroke="#ffffff" stroke-width="5"/>
+  <rect x="222" y="92" width="22" height="22" fill="#ff2a40"/>
+
+  <!-- Top Right Finder Pattern -->
+  <rect x="344" y="80" width="46" height="46" rx="4" fill="none" stroke="#ffffff" stroke-width="5"/>
+  <rect x="356" y="92" width="22" height="22" fill="#ff2a40"/>
+
+  <!-- Bottom Left Finder Pattern -->
+  <rect x="210" y="214" width="46" height="46" rx="4" fill="none" stroke="#ffffff" stroke-width="5"/>
+  <rect x="222" y="226" width="22" height="22" fill="#ff2a40"/>
+
+  <!-- Data Bits / Blocks -->
+  <rect x="270" y="80" width="14" height="14" fill="#f4c430"/>
+  <rect x="295" y="80" width="14" height="14" fill="#ffffff" opacity="0.8"/>
+  <rect x="315" y="95" width="14" height="14" fill="#ff2a40"/>
+  <rect x="270" y="110" width="28" height="14" fill="#ffffff" opacity="0.8"/>
+  
+  <rect x="210" y="145" width="14" height="24" fill="#ffffff" opacity="0.8"/>
+  <rect x="235" y="145" width="24" height="14" fill="#ff2a40"/>
+  <rect x="270" y="140" width="60" height="60" rx="8" fill="#141722" stroke="#e5b869" stroke-width="2"/>
+  <!-- Central Demon Slayer Kanji in QR -->
+  <text x="300" y="180" font-family="'Yuji Boku', serif" font-size="28" fill="#ff2a40" text-anchor="middle" font-weight="900">鬼</text>
+
+  <rect x="345" y="145" width="18" height="18" fill="#f4c430"/>
+  <rect x="370" y="155" width="18" height="18" fill="#ffffff" opacity="0.8"/>
+  
+  <rect x="270" y="215" width="18" height="18" fill="#ffffff" opacity="0.8"/>
+  <rect x="300" y="225" width="28" height="14" fill="#ff2a40"/>
+  <rect x="340" y="215" width="20" height="20" fill="#f4c430"/>
+  <rect x="370" y="235" width="18" height="24" fill="#ffffff" opacity="0.8"/>
+
+  <!-- Laser Scanline Across Center -->
+  <rect x="180" y="165" width="240" height="4" fill="url(#laserGrad)" filter="url(#neonGlow)"/>
+
+  <!-- Badge / Mission Data Bar -->
+  <rect x="160" y="305" width="280" height="34" rx="6" fill="#10121b" stroke="#e5b869" stroke-width="1"/>
+  <text x="300" y="327" font-family="'Outfit', sans-serif" font-size="12" fill="#ffd670" text-anchor="middle" font-weight="700" letter-spacing="1.5">CCDI FACULTY ATTENDANCE SYSTEM</text>
+
+  <!-- Side Japanese Seal -->
+  <g transform="translate(480, 70)">
+    <rect x="0" y="0" width="48" height="120" rx="4" fill="rgba(230, 57, 70, 0.15)" stroke="#ff2a40" stroke-width="1.5"/>
+    <text x="24" y="35" font-family="'Yuji Boku', serif" font-size="16" fill="#ff2a40" text-anchor="middle" font-weight="bold">即</text>
+    <text x="24" y="65" font-family="'Yuji Boku', serif" font-size="16" fill="#ff2a40" text-anchor="middle" font-weight="bold">時</text>
+    <text x="24" y="95" font-family="'Yuji Boku', serif" font-size="16" fill="#ff2a40" text-anchor="middle" font-weight="bold">認</text>
+  </g>
+</svg>

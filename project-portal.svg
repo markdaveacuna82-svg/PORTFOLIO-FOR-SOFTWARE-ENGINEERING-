@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="portalBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0c14"/>
+      <stop offset="50%" stop-color="#141829"/>
+      <stop offset="100%" stop-color="#07080e"/>
+    </linearGradient>
+    <linearGradient id="hudGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00b4d8"/>
+      <stop offset="100%" stop-color="#90e0ef"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="360" fill="url(#portalBg)"/>
+
+  <!-- Portal Dashboard Wireframe -->
+  <rect x="50" y="40" width="500" height="280" rx="10" fill="#0f121d" stroke="#00b4d8" stroke-width="1.5" opacity="0.9"/>
+  
+  <!-- Dashboard Top Bar -->
+  <path d="M50 40 L550 40 L550 80 L50 80 Z" fill="#181d2e"/>
+  <circle cx="75" cy="60" r="5" fill="#ff2a40"/>
+  <circle cx="92" cy="60" r="5" fill="#ffbe0b"/>
+  <circle cx="109" cy="60" r="5" fill="#00b4d8"/>
+
+  <text x="300" y="65" font-family="'Outfit', sans-serif" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="600" letter-spacing="2">DEMON SLAYER CORPS — IT INVENTORY &amp; ASSET MATRIX</text>
+
+  <!-- Left Sidebar Navigation -->
+  <rect x="50" y="80" width="120" height="240" fill="#121624"/>
+  <rect x="65" y="105" width="90" height="22" rx="4" fill="rgba(0, 180, 216, 0.2)"/>
+  <rect x="65" y="140" width="90" height="18" rx="4" fill="rgba(255, 255, 255, 0.05)"/>
+  <rect x="65" y="170" width="90" height="18" rx="4" fill="rgba(255, 255, 255, 0.05)"/>
+  <rect x="65" y="200" width="90" height="18" rx="4" fill="rgba(255, 255, 255, 0.05)"/>
+
+  <!-- Main Content Dashboard Cards -->
+  <!-- Metric Card 1 -->
+  <rect x="190" y="105" width="105" height="60" rx="6" fill="#181e30" stroke="rgba(255, 255, 255, 0.08)"/>
+  <text x="205" y="128" font-family="'Outfit', sans-serif" font-size="10" fill="#90e0ef">TOTAL ASSETS</text>
+  <text x="205" y="152" font-family="'Cinzel', serif" font-size="20" fill="#ffffff" font-weight="bold">342</text>
+
+  <!-- Metric Card 2 -->
+  <rect x="310" y="105" width="105" height="60" rx="6" fill="#181e30" stroke="rgba(255, 255, 255, 0.08)"/>
+  <text x="325" y="128" font-family="'Outfit', sans-serif" font-size="10" fill="#ffd670">IN SERVICE</text>
+  <text x="325" y="152" font-family="'Cinzel', serif" font-size="20" fill="#ffffff" font-weight="bold">318</text>
+
+  <!-- Metric Card 3 -->
+  <rect x="430" y="105" width="105" height="60" rx="6" fill="#181e30" stroke="rgba(255, 255, 255, 0.08)"/>
+  <text x="445" y="128" font-family="'Outfit', sans-serif" font-size="10" fill="#ff8533">MAINTENANCE</text>
+  <text x="445" y="152" font-family="'Cinzel', serif" font-size="20" fill="#ff2a40" font-weight="bold">24</text>
+
+  <!-- Chart Analytics Area -->
+  <rect x="190" y="180" width="345" height="120" rx="6" fill="#151a29" stroke="rgba(0, 180, 216, 0.2)"/>
+  
+  <!-- Wave Graph Line -->
+  <path d="M210 270 Q240 230 270 250 T330 210 T390 240 T450 195 T510 220" fill="none" stroke="url(#hudGlow)" stroke-width="3"/>
+  <circle cx="450" cy="195" r="4.5" fill="#ffffff" stroke="#00b4d8" stroke-width="2"/>
+</svg>
